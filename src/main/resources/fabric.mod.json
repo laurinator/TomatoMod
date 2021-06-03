@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "tom",
+  "version": "${version}",
+
+  "name": "Tomato Mod",
+  "description": "Adds tomatoes",
+  "authors": [
+    "Laurin Maier"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/tom/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.laurin.tomatomod.TomatoMod"
+    ]
+  },
+  "mixins": [
+    ""
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

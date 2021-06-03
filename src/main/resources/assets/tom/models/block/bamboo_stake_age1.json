@@ -1,0 +1,142 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "bamboo_stake_empty_side": "tom:blocks/bamboo_stake_empty_side",
+        "bamboo_stake_empty_top_bottom": "tom:blocks/bamboo_stake_empty_top_bottom",
+        "bamboo_stake_green": "tom:blocks/bamboo_stake_green"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "middle_pole",
+            "from": [ 7, 0, 7 ], 
+            "to": [ 9, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_empty_side", "uv": [ 0, 0, 2, 16 ] },
+                "east": { "texture": "#bamboo_stake_empty_side", "uv": [ 0, 0, 2, 16 ] },
+                "south": { "texture": "#bamboo_stake_empty_side", "uv": [ 0, 0, 2, 16 ] },
+                "west": { "texture": "#bamboo_stake_empty_side", "uv": [ 0, 0, 2, 16 ] },
+                "up": { "texture": "#bamboo_stake_empty_top_bottom", "uv": [ 0, 0, 2, 2 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_empty_top_bottom", "uv": [ 0, 0, 2, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage0",
+            "from": [ 7, 0, 6 ], 
+            "to": [ 8, 3, 7 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage1",
+            "from": [ 6, 2, 6 ], 
+            "to": [ 7, 6, 7 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 4 ] },
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 4 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 4 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 4 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage2",
+            "from": [ 7, 0, 9 ], 
+            "to": [ 8, 3, 10 ], 
+            "faces": {
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 3 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage3",
+            "from": [ 8, 3, 9 ], 
+            "to": [ 9, 4, 10 ], 
+            "faces": {
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage4",
+            "from": [ 6, 3, 9 ], 
+            "to": [ 7, 5, 10 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage5",
+            "from": [ 9, 0, 7 ], 
+            "to": [ 10, 1, 9 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ] },
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 2, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 2, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "foliage6",
+            "from": [ 4, 0, 8 ], 
+            "to": [ 5, 2, 9 ], 
+            "faces": {
+                "north": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "east": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "south": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "west": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 2 ] },
+                "up": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 },
+                "down": { "texture": "#bamboo_stake_green", "uv": [ 0, 0, 1, 1 ], "rotation": 90 }
+            }
+        }
+    ]
+}

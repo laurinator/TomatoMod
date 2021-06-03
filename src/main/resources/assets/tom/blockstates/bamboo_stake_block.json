@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "tom:block/bamboo_stake_age0" },
+    "age=1": { "model":  "tom:block/bamboo_stake_age1"},
+    "age=2": { "model":  "tom:block/bamboo_stake_age2"},
+    "age=3": { "model":  "tom:block/bamboo_stake_age3"},
+    "age=4": { "model":  "tom:block/bamboo_stake_age4"},
+    "age=5": { "model":  "tom:block/bamboo_stake_age5"},
+    "age=6": { "model":  "tom:block/bamboo_stake_age6"}
+
+  }
+}
