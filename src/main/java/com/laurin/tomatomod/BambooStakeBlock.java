@@ -2,33 +2,27 @@ package com.laurin.tomatomod;
 
 import com.laurin.tomatomod.registry.ModItems;
 import net.minecraft.block.*;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.state.property.IntProperty;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
-import net.minecraft.tag.FluidTags;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
-import java.util.Iterator;
 import java.util.Random;
 
 
 public class BambooStakeBlock extends Block implements Fertilizable {
 
-
-    //TODO: Block drops
+    //TODO: Composting
 
     public static final IntProperty AGE = IntProperty.of("age", 0, 6);
 
@@ -64,12 +58,10 @@ public class BambooStakeBlock extends Block implements Fertilizable {
             s.decrement(1);
 
         } else if (age == 5){
-
-            //TODO: drop item
+            int j = 1 + world.random.nextInt(3);
+            dropStack(world, pos, new ItemStack(ModItems.GREEN_TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
         } else if (age == 6){
-
-
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
