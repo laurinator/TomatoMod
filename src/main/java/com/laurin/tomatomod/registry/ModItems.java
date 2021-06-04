@@ -23,17 +23,20 @@ public class ModItems {
             .food(new FoodComponent.Builder().hunger(1).saturationModifier(1).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*3), 1f).build())
     );
 
-
     public static final Item BAMBOO_STAKE_BLOCK = new BlockItem(ModBlocks.BAMBOO_STAKE_BLOCK, new Item.Settings()
             .group(ItemGroup.DECORATIONS)
     );
 
+    public static final Item SPARK = new Item(new Item.Settings()
+            .group(ItemGroup.MISC)
+    );
 
     public static void registerItems(){
 
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "tomato"), TOMATO);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "bamboo_stake"), BAMBOO_STAKE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "green_tomato"), GREEN_TOMATO);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "spark"), SPARK);
 
     }
 
