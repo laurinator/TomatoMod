@@ -34,7 +34,8 @@ public class BambooStakeBlock extends Block {
         BlockState blockState = world.getBlockState(pos.down());
         if (blockState.getBlock() == this) {
             return true;
-        } else return blockState.isOf(Blocks.GRASS_BLOCK) || blockState.isOf(Blocks.DIRT) || blockState.isOf(Blocks.COARSE_DIRT) || blockState.isOf(Blocks.FARMLAND);
+        } else
+            return blockState.isOf(Blocks.GRASS_BLOCK) || blockState.isOf(Blocks.DIRT) || blockState.isOf(Blocks.COARSE_DIRT) || blockState.isOf(Blocks.FARMLAND);
     }
 
     @Override
@@ -59,7 +60,9 @@ public class BambooStakeBlock extends Block {
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.GREEN_TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
-        } else if (age == 6){
+
+        } else if (age == 6) {
+
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
@@ -78,12 +81,12 @@ public class BambooStakeBlock extends Block {
         boolean canGrow = world.getBaseLightLevel(pos.up(), 0) <= 9;
 
         int age = state.get(AGE);
-        if (canGrow && 0 < age && age < 6 && random.nextInt(5)==0) {  // jeder 5te random tick
+        if (canGrow && 0 < age && age < 6 && random.nextInt(5) == 0) {  // jeder 5te random tick
             world.setBlockState(pos, state.with(AGE, age + 1));
         }
 
         BlockState blockState = world.getBlockState(pos.down());
-        if(canGrow && age == 0 && blockState.isOf(this) && blockState.get(AGE) >= 4 ){
+        if (canGrow && age == 0 && blockState.isOf(this) && blockState.get(AGE) >= 4) {
             world.setBlockState(pos, state.with(AGE, 1));
         }
     }

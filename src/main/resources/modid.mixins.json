@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "TomatoCompostable"
   ],
   "injectors": {
     "defaultRequire": 1
