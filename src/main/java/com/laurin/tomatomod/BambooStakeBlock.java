@@ -20,9 +20,7 @@ import net.minecraft.world.WorldView;
 import java.util.Random;
 
 
-public class BambooStakeBlock extends Block implements Fertilizable {
-
-    //TODO: Composting (keine Ahnung wie das gehen soll, wird wahrscheinlich kompliziert)
+public class BambooStakeBlock extends Block {
 
     public static final IntProperty AGE = IntProperty.of("age", 0, 6);
 
@@ -51,13 +49,13 @@ public class BambooStakeBlock extends Block implements Fertilizable {
             world.setBlockState(pos, state.with(AGE, 1));
             s.decrement(1);
 
-        }   else if(age >= 1 && age <= 5 && s.getItem().toString().equals("bone_meal")) {
+        } else if (age >= 1 && age <= 5 && s.getItem().toString().equals("bone_meal")) {
 
-            //TODO: Soll die Tomate bei jedem Mal wachsen?
             world.setBlockState(pos, state.with(AGE, age + 1));
             s.decrement(1);
 
-        } else if (age == 5){
+        } else if (age == 5) {
+
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.GREEN_TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
@@ -65,8 +63,11 @@ public class BambooStakeBlock extends Block implements Fertilizable {
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
+
         } else {
+
             return ActionResult.FAIL;
+
         }
         return ActionResult.SUCCESS;
     }
@@ -74,8 +75,7 @@ public class BambooStakeBlock extends Block implements Fertilizable {
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 
-        boolean canGrow = world.isDay(); //TODO: Sollen Tomaten nur am Tag wachsen, oder nur in der Nacht oder immer? In der Nacht wäre mal ne neue Mechanic und würde Sinn ergeben
-        //boolean canGrow = world.getBaseLightLevel(pos.up(), 0) <= 9         oder soll es nur in der Dunkelheit wachsen? Vielleicht weniger nervig als nur in der Nacht und wäre ziemlich interessant
+        boolean canGrow = world.getBaseLightLevel(pos.up(), 0) <= 9;
 
         int age = state.get(AGE);
         if (canGrow && 0 < age && age < 6 && random.nextInt(5)==0) {  // jeder 5te random tick
@@ -96,21 +96,5 @@ public class BambooStakeBlock extends Block implements Fertilizable {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return VoxelShapes.cuboid(0.4f, 0f, 0.4f, 0.6f, 1f, 0.6f);
-    }
-
-    @Override
-    public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
-        return true;
-    }
-
-    @Override
-    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return true;
-    }
-
-    @Override
-    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        System.out.println("bone meal");
-        world.setBlockState(pos, state.with(AGE, state.get(AGE)+1));
     }
 }
