@@ -22,7 +22,7 @@ import java.util.Random;
 
 public class BambooStakeBlock extends Block implements Fertilizable {
 
-    //TODO: Composting
+    //TODO: Composting (keine Ahnung wie das gehen soll, wird wahrscheinlich kompliziert)
 
     public static final IntProperty AGE = IntProperty.of("age", 0, 6);
 
@@ -65,6 +65,8 @@ public class BambooStakeBlock extends Block implements Fertilizable {
             int j = 1 + world.random.nextInt(3);
             dropStack(world, pos, new ItemStack(ModItems.TOMATO, j));
             world.setBlockState(pos, state.with(AGE, 3));
+        } else {
+            return ActionResult.FAIL;
         }
         return ActionResult.SUCCESS;
     }

@@ -14,6 +14,7 @@ public class TomatoMod implements ModInitializer {
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        //LootUpdater.init();
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BAMBOO_STAKE_BLOCK, RenderLayer.getTranslucent());
     }
