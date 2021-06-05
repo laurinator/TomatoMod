@@ -116,8 +116,6 @@ public class BambooStakeBlock extends Block {
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 
-        System.out.println("----------");
-
         if (!state.canPlaceAt(world, pos)) {
             world.breakBlock(pos, true);
         }

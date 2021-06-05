@@ -3,5 +3,7 @@
   "item.tom.bamboo_stake" : "Bamboo Stake",
   "item.tom.green_tomato" : "Green Tomato",
   "item.tom.spark" : "Spark",
+  "item.tom.glowing_glass_block" : "Glowing Glass",
+  "block.tom.glowing_glass_block" : "Glowing Glass",
   "block.tom.bamboo_stake_block" : "Bamboo Stake Block"
 }

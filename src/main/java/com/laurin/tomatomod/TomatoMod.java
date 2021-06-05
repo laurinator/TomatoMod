@@ -12,11 +12,14 @@ public class TomatoMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         LootUpdater.init();
         VillagerTrades.init();
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BAMBOO_STAKE_BLOCK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOWING_GLASS_BLOCK, RenderLayer.getTranslucent());
+
     }
 }
