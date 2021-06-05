@@ -39,13 +39,48 @@ public class ModItems {
             .group(ItemGroup.BUILDING_BLOCKS)
     );
 
+    public static final Item GLOWING_WHITE_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_WHITE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_ORANGE_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_ORANGE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_MAGENTA_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_MAGENTA_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_LIGHT_BLUE_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_LIGHT_BLUE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_YELLOW_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_YELLOW_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_LIME_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_LIME_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_PINK_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_PINK_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_GRAY_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_GRAY_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_LIGHT_GRAY_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_LIGHT_GRAY_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_CYAN_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_CYAN_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_PURPLE_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_PURPLE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_BLUE_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_BLUE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_BROWN_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_BROWN_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_GREEN_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_GREEN_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_RED_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_RED_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final Item GLOWING_BLACK_STAINED_GLASS_BLOCK = new BlockItem(ModBlocks.GLOWING_BLACK_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+
     public static void registerItems(){
 
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "tomato"), TOMATO);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "bamboo_stake"), BAMBOO_STAKE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "green_tomato"), GREEN_TOMATO);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "spark"), SPARK);
+
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_glass_block"), GLOWING_GLASS_BLOCK);
+
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_white_stained_glass_block"), GLOWING_WHITE_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_orange_stained_glass_block"), GLOWING_ORANGE_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_magenta_stained_glass_block"), GLOWING_MAGENTA_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_light_blue_stained_glass_block"), GLOWING_LIGHT_BLUE_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_yellow_stained_glass_block"), GLOWING_YELLOW_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_lime_stained_glass_block"), GLOWING_LIME_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_pink_stained_glass_block"), GLOWING_PINK_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_gray_stained_glass_block"), GLOWING_GRAY_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_light_gray_stained_glass_block"), GLOWING_LIGHT_GRAY_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_cyan_stained_glass_block"), GLOWING_CYAN_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_purple_stained_glass_block"), GLOWING_PURPLE_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_blue_stained_glass_block"), GLOWING_BLUE_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_brown_stained_glass_block"), GLOWING_BROWN_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_green_stained_glass_block"), GLOWING_GREEN_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_red_stained_glass_block"), GLOWING_RED_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_black_stained_glass_block"), GLOWING_BLACK_STAINED_GLASS_BLOCK);
 
     }
 

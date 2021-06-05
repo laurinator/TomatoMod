@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "tom:blocks/glowing_cyan_stained_glass_block"
+    }
+}

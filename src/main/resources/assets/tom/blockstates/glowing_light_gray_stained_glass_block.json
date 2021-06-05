@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "tom:block/glowing_light_gray_stained_glass_block"
+        }
+    }
+}

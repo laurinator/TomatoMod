@@ -8,6 +8,4 @@ public class GlowingGlassBlock  extends AbstractGlassBlock {
         super(settings);
     }
 
-
-
 }
