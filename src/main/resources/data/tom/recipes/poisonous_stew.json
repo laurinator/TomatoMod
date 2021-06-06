@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:poisonous_potato"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "tom:green_tomato"
+    }
+  ],
+  "result": {
+    "item": "tom:poisonous_stew",
+    "count": 1
+  }
+}

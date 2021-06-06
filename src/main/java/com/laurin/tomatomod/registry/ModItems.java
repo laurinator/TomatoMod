@@ -1,5 +1,6 @@
 package com.laurin.tomatomod.registry;
 
+import com.laurin.tomatomod.PoisonousStewItem;
 import com.laurin.tomatomod.SparkItem;
 import com.laurin.tomatomod.TomatoMod;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -30,6 +31,13 @@ public class ModItems {
 
     public static final Item SPARK = new SparkItem(new Item.Settings()
             .group(ItemGroup.MISC)
+    );
+
+    public static final PoisonousStewItem POISONOUS_STEW = new PoisonousStewItem(new Item.Settings()
+            .group(ItemGroup.FOOD)
+            .maxCount(1)
+            .food(new FoodComponent.Builder().alwaysEdible().hunger(9).saturationModifier(6).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*30), 1f).build())
+
     );
 
     //BlockItems
@@ -66,6 +74,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "green_tomato"), GREEN_TOMATO);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "spark"), SPARK);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "tomato_salad"), TOMATO_SALAD);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "poisonous_stew"), POISONOUS_STEW);
 
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_glass_block"), GLOWING_GLASS_BLOCK);
 

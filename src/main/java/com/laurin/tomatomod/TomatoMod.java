@@ -31,6 +31,8 @@ public class TomatoMod implements ModInitializer {
     @Override
     public void onInitialize() {
 
+        PoisonousStewItem.initEffectList();
+
         Registry.register(Registry.FEATURE, new Identifier(MOD_ID, "wild_tomato"), WILD_TOMATO_FEATURE);
 
         RegistryKey<ConfiguredFeature<?, ?>> wildTomato = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
