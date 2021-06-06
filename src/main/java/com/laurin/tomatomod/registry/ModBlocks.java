@@ -20,7 +20,7 @@ public class ModBlocks {
 
     public static final BambooStakeBlock BAMBOO_STAKE_BLOCK = new BambooStakeBlock(FabricBlockSettings
             .of(Material.WOOD)
-            .strength( 0.2f, 0.2f)
+            .strength(0.2f, 0.2f)
             .breakByTool(FabricToolTags.AXES, 0)
             .breakByHand(true)
             .sounds(BlockSoundGroup.BAMBOO)
