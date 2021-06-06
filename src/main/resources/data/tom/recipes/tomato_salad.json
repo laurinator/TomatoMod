@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "tom:tomato"
+    },
+    {
+      "item": "tom:tomato"
+    },
+    {
+      "item": "tom:tomato"
+    }
+  ],
+  "result": {
+    "item": "tom:tomato_salad",
+    "count": 1
+  }
+}

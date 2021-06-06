@@ -4,10 +4,7 @@ import com.laurin.tomatomod.SparkItem;
 import com.laurin.tomatomod.TomatoMod;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -18,6 +15,12 @@ public class ModItems {
     public static final Item TOMATO = new Item(new Item.Settings()
             .group(ItemGroup.FOOD)
             .food(new FoodComponent.Builder().hunger(3).saturationModifier(3).build())
+    );
+
+    public static final MushroomStewItem TOMATO_SALAD = new MushroomStewItem(new Item.Settings()
+            .group(ItemGroup.FOOD)
+            .maxCount(1)
+            .food(new FoodComponent.Builder().hunger(9).saturationModifier(6).build())
     );
 
     public static final Item GREEN_TOMATO = new Item(new Item.Settings()
@@ -62,6 +65,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "bamboo_stake"), BAMBOO_STAKE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "green_tomato"), GREEN_TOMATO);
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "spark"), SPARK);
+        Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "tomato_salad"), TOMATO_SALAD);
 
         Registry.register(Registry.ITEM, new Identifier(TomatoMod.MOD_ID, "glowing_glass_block"), GLOWING_GLASS_BLOCK);
 
